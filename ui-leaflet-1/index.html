@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="demoapp">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,6 +7,20 @@
     <meta name="description" content="Sample with AngularJS, Leaflet and UI-Leaflet">
     <meta name="keywords" content="merukeru, example, tutorial, how-to, demo, javascript, angular, angularjs, leaflet">
     <link rel="start" href="https://merukeru.github.io/angularjs-samples/" title="Marukerus AngularJS samples">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-simple-logger/0.1.7/angular-simple-logger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ui-leaflet/2.0.0/ui-leaflet.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.6/leaflet.markercluster.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.6/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.6/MarkerCluster.Default.css" />
 
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
@@ -16,7 +30,7 @@
     </title>
 </head>
 
-<body>
+<body ng-controller="MarkersClusteringController">
     <div class="header">
         <h1>
             <a target="_self" href="https://merukeru.github.io/angularjs-samples/">AngularJS Samples</a>
@@ -26,7 +40,7 @@
         </h2>
     </div>
     <div class="main-content">
-        <!-- insert content gere -->
+        <leaflet lf-center="center" markers="markers" layers="layers" width="100%" height="480px"></leaflet>
     </div>
 </body>
 

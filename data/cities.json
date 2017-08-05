@@ -1,0 +1,41 @@
+[{
+    "id": "c1",
+    "name": "Berlin",
+    "lat": 52.5155886,
+    "lng": 13.3697503
+}, {
+    "id": "c2",
+    "name": "Leipzig",
+    "lat": 51.333,
+    "lng": 12.383
+}, {
+    "id": "c3",
+    "name": "München",
+    "lat": 48.133,
+    "lng": 11.567
+}, {
+    "id": "c4",
+    "name": "Hamburg",
+    "lat": 53.583,
+    "lng": 9.983
+}, {
+    "id": "c5",
+    "name": "Hanover",
+    "lat": 52.367,
+    "lng": 9.717
+}, {
+    "id": "c6",
+    "name": "Stuttgart",
+    "lat": 48.767,
+    "lng": 9.167
+}, {
+    "id": "c7",
+    "name": "Frankfurt",
+    "lat": 50.1,
+    "lng": 8.683
+}, {
+    "id": "c8",
+    "name": "Dresden",
+    "lat": 51.05,
+    "lng": 13.733
+}]
