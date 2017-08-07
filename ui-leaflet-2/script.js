@@ -39,12 +39,12 @@ app.controller("MarkersClusteringController", ["$scope", "$http", "$log", "$q", 
                 overlays: {
                     cities: {
                         name: "Cities",
-                        type: "group",
+                        type: "markercluster",
                         visible: true
                     },
                     points: {
                         name: "Points",
-                        type: "group",
+                        type: "markercluster",
                         visible: true
                     }
                 }
